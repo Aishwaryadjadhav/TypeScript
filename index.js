@@ -59,3 +59,16 @@ var car = {
 console.log(car);
 var car1 = { type: "thar", model: "mahindra", year: 2015 };
 console.log(car1);
+//---------------------functions----------------------
+function print1() {
+    console.log("hello typescript");
+}
+print1();
+function add(a, b) {
+    return a + b;
+}
+console.log(add(4, 5));
+function printString(name, age) {
+    console.log(name, age);
+}
+printString("virat", 35);

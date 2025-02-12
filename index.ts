@@ -81,3 +81,17 @@ console.log(car);
 
 let car1={type:"thar", model:"mahindra", year:2015};
 console.log(car1);
+
+//---------------------functions----------------------
+
+function print1(){
+    console.log("hello typescript");
+}print1();
+
+function add(a:number , b: number):number{
+    return a+b;
+}console.log(add(4,5));
+
+function printString(name:string, age:number): void {
+    console.log(name,age);
+}printString("virat", 35);
