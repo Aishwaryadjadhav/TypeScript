@@ -18,8 +18,9 @@ var z = 123;
 z = "aishu";
 console.log(z);
 // ----------------------typescript arrays-----------------     
+console.log("// ----------------------typescript arrays-----------------");
 var arr = [1, 2, 3, 4];
-arr.pop();
+// arr.pop();
 console.log(arr);
 var arr1 = [5, 6, 7, 8, 9];
 arr1.push(10);
@@ -72,3 +73,18 @@ function printString(name, age) {
     console.log(name, age);
 }
 printString("virat", 35);
+//----------------------typescript classes---------------------------
+var Person = /** @class */ (function () {
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    Person.prototype.greet = function () {
+        console.log("Hello, my name is ".concat(this.name));
+    };
+    return Person;
+}());
+// Creating an object
+var person1 = new Person("Aishwarya", 25);
+person1.greet();
+// Output: Hello, my name is Aishwarya.

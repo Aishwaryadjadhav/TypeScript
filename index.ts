@@ -27,8 +27,10 @@ console.log(z);
 
 // ----------------------typescript arrays-----------------     
 
-let arr:number[]=[1,2,3,4];
-arr.pop();
+console.log("// ----------------------typescript arrays-----------------");
+
+let arr: readonly number[]=[1,2,3,4];
+// arr.pop();
 console.log(arr);
 
 let arr1=[5,6,7,8,9];
@@ -95,3 +97,26 @@ function add(a:number , b: number):number{
 function printString(name:string, age:number): void {
     console.log(name,age);
 }printString("virat", 35);
+
+
+//----------------------typescript classes---------------------------
+
+class Person {
+    name: string;
+    age: number;
+  
+    constructor(name: string, age: number) {
+      this.name = name;
+      this.age = age;
+    }
+  
+    greet(): void {
+      console.log(`Hello, my name is ${this.name}`);
+    }
+  }
+  
+  // Creating an object
+  const person1 = new Person("Aishwarya", 25);
+  person1.greet();  
+  // Output: Hello, my name is Aishwarya.
+  
