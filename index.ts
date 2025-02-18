@@ -98,6 +98,12 @@ function printString(name:string, age:number): void {
     console.log(name,age);
 }printString("virat", 35);
 
+// -----------Arrow Function Example------------
+
+const add1 = (a: number, b: number): number => a + b;
+console.log(add(5, 3));
+
+
 
 //----------------------typescript classes---------------------------
 
