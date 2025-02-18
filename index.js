@@ -73,6 +73,9 @@ function printString(name, age) {
     console.log(name, age);
 }
 printString("virat", 35);
+// -----------Arrow Function Example------------
+var add1 = function (a, b) { return a + b; };
+console.log(add(5, 3));
 //----------------------typescript classes---------------------------
 var Person = /** @class */ (function () {
     function Person(name, age) {
